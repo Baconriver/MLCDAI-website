@@ -3,8 +3,8 @@ import HeaderWidget from '../common/HeaderWidget';
 
 const Features3 = ({ header, items }: FeaturesProps) => (
   <section className="scroll-mt-16" id="features3">
-    <div className="mx-auto max-w-6xl px-4 py-16 lg:px-8 lg:py-20">
-      {header && <HeaderWidget header={header} titleClassname="text-4xl md:text-5xl" />}
+    <div className="mx-auto max-w-7xl px-4 py-6 md:py-16 lg:px-8 lg:py-16">
+      {header && <HeaderWidget header={header} titleClassname="text-2xl md:text-4xl" />}
       <div className="mb-0 grid grid-cols-3 items-start gap-6 dark:text-white sm:grid-cols-2 md:my-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         {items.map(({ title, description, icon: Icon, link }, index) => (
           <div

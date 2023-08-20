@@ -8,10 +8,23 @@ const Hero = (props: { data: HeroProps }) => {
   return (
     <section id="heroOne">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="py-12 md:py-20">
-          <div className="mx-auto max-w-4xl pb-10 text-center md:pb-16">
+        <div>
+          {image && (
+            <div className="relative m-auto max-w-7xl">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                className="mx-auto h-auto w-full bg-gray-400 dark:bg-slate-700"
+                placeholder="blur"
+                loading="eager"
+                priority
+                sizes="(max-width: 64rem) 100vw, 1024px"
+              />
+            </div>
+          )}
+          {/* <div className="mx-auto max-w-7xl pb-10 text-center md:pb-16">
             {title && (
-              <h1 className="leading-tighter font-heading mb-6 text-5xl font-bold tracking-tighter md:text-6xl">
+              <h1 className="leading-tighter font-heading my-6 ml-20 max-w-xl text-left text-4xl font-semibold tracking-tighter">
                 {title}
               </h1>
             )}
@@ -22,20 +35,7 @@ const Hero = (props: { data: HeroProps }) => {
                 {callToAction2 && <CTA data={callToAction2} />}
               </div>
             </div>
-          </div>
-          {image && (
-            <div className="relative m-auto max-w-5xl">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
-                placeholder="blur"
-                loading="eager"
-                priority
-                sizes="(max-width: 64rem) 100vw, 1024px"
-              />
-            </div>
-          )}
+          </div> */}
         </div>
       </div>
     </section>

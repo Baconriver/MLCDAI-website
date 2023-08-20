@@ -21,8 +21,12 @@ import {
   heroData,
   pricingData,
   socialProofData,
+  sponsorsData,
 } from '~/shared/data';
 import Contact from '~/components/widgets/Contact';
+import News from '~/components/widgets/News';
+import Sponsors from '~/components/widgets/Sponsors';
+import Solutions from '~/components/widgets/Solutions';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -32,17 +36,20 @@ export default function Page() {
   return (
     <>
       <Hero data={heroData} />
-      <SocialProof {...socialProofData} />
+      {/* <SocialProof {...socialProofData} /> */}
       <Features3 {...featuresData} />
-      <Content {...contentData} />
-      <Content {...content2Data} />
-      <Steps />
-      <Testimonial />
-      <FAQs2 {...faqsData2} />
-      <Pricing {...pricingData} />
-      <Team />
-      <Contact />
-      <CallToAction2 {...callToActionData} />
+      {/* <Content {...contentData} />
+      <Content {...content2Data} /> */}
+      {/* <Steps /> */}
+      <Solutions />
+      {/* <Testimonial /> */}
+      {/* <FAQs2 {...faqsData2} /> */}
+      {/* <Pricing {...pricingData} /> */}
+      {/* <Team /> */}
+      {/* <Contact /> */}
+      {/* <CallToAction2 {...callToActionData} /> */}
+      <News />
+      <Sponsors {...sponsorsData} />
     </>
   );
 }

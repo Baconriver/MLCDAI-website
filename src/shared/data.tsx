@@ -1,6 +1,7 @@
 import {
   IconArrowDown,
   IconArrowsRightLeft,
+  IconBrain,
   IconBrandFacebook,
   IconBrandGithub,
   IconBrandInstagram,
@@ -19,9 +20,12 @@ import {
   IconMail,
   IconMapPin,
   IconMessages,
+  IconMoodSmileBeam,
   IconPhoneCall,
   IconRocket,
   IconRss,
+  IconZoomCheck,
+  IconZoomExclamation,
 } from '@tabler/icons-react';
 import {
   AnnouncementProps,
@@ -36,6 +40,8 @@ import {
   HeroProps,
   PricingProps,
   SocialProofProps,
+  SolutionsProps,
+  SponsorsProps,
   StatsProps,
   StepsProps,
   TeamProps,
@@ -51,31 +57,41 @@ import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
+import deakinLogo from '~/assets/images/sponsor-deakin.png';
 
 // Announcement data
 export const announcementData: AnnouncementProps = {
   title: 'NEW',
   callToAction: {
-    text: 'This template is made with Next.js 13 using the new App Router »',
+    text: 'Got a news from MLCDAI!',
     href: 'https://nextjs.org/docs/app',
   },
   callToAction2: {
-    text: 'Follow @onWidget on Twitter',
-    href: 'https://twitter.com/intent/user?screen_name=onwidget',
+    text: 'Follow @MLCDAI on Twitter',
+    href: 'https://twitter.com/intent/user?screen_name=MLCDAI',
   },
 };
 
 // Header data
 export const headerData: HeaderProps = {
   links: [
+    { label: 'Home', href: '/' },
+    {
+      label: 'About us',
+      href: '/about',
+    },
+    {
+      label: 'Blog',
+      href: '/blog',
+    },
+    {
+      label: 'Contact',
+      href: '/contact',
+    },
     {
       label: 'Pages',
       icon: IconChevronDown,
       links: [
-        {
-          label: 'About us',
-          href: '/about',
-        },
         {
           label: 'Pricing',
           href: '/pricing',
@@ -98,22 +114,14 @@ export const headerData: HeaderProps = {
         },
       ],
     },
-    {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
   ],
   actions: [
-    {
-      text: 'Download',
-      href: 'https://github.com/onwidget/tailnext',
-      targetBlank: true,
-      btnType: 'primary',
-    },
+    // {
+    //   text: 'Download',
+    //   href: 'https://github.com/onwidget/tailnext',
+    //   targetBlank: true,
+    //   btnType: 'primary',
+    // },
   ],
   isSticky: true,
   showToggleTheme: true,
@@ -123,12 +131,7 @@ export const headerData: HeaderProps = {
 
 // Hero data
 export const heroData: HeroProps = {
-  title: (
-    <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
-    </>
-  ),
+  title: <>Advanced Techniques for Misinformation Management</>,
   subtitle: (
     <>
       <span className="hidden md:inline">
@@ -202,6 +205,14 @@ export const socialProofData: SocialProofProps = {
       src: typescriptLogo,
       alt: 'Typescript Logo',
     },
+  ],
+};
+
+export const sponsorsData: SponsorsProps = {
+  images: [
+    { link: 'https://www.deakin.edu.au/', src: deakinLogo, alt: 'Sponsor Logo' },
+    { link: 'https://www.deakin.edu.au/', src: deakinLogo, alt: 'Sponsor Logo' },
+    { link: 'https://www.deakin.edu.au/', src: deakinLogo, alt: 'Sponsor Logo' },
   ],
 };
 
@@ -476,40 +487,35 @@ export const callToActionData2: CallToActionProps = {
 // Feature data
 export const featuresData: FeaturesProps = {
   header: {
-    title: (
-      <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
-      </>
-    ),
-    subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.',
-    highlight: 'Features',
+    title: <>Fighting the Infodemic: Advanced Techniques for Misinformation Management</>,
+    subtitle: '',
+    highlight: '',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
+      title: 'Information Ecology and Cognition',
       description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-      icon: IconBrandTailwind,
+        'Promote a deeper understanding of information flow and human cognition interplay in the digital age, shaping effective information management strategies.',
+      icon: IconBrain,
       link: {
         label: 'Discover now',
         href: '/',
       },
     },
     {
-      title: 'Ready-to-use Components',
+      title: 'Deepfake Technologies',
       description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-      icon: IconComponents,
+        'Counteract increasingly sophisticated methods of false content creation by researching and developing innovative technologies, ensuring the public is not misguided.',
+      icon: IconZoomExclamation,
       link: {
         label: 'Discover now',
         href: '/',
       },
     },
     {
-      title: 'Best Practices',
+      title: 'Cross-media Information Verification',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+        'Integrate various information sources to form a comprehensive truth-checking framework, ensuring information is verified from all angles.',
       icon: IconListCheck,
       link: {
         label: 'Discover now',
@@ -517,30 +523,29 @@ export const featuresData: FeaturesProps = {
       },
     },
     {
-      title: 'Excellent Page Speed',
+      title: 'Emotion Analysis and Fake News',
       description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-      icon: IconRocket,
+        'Investigate deeply how misinformation manipulates and exploits emotions, devising strategies to predict and neutralise its impacts.',
+      icon: IconMoodSmileBeam,
       link: {
         label: 'Discover now',
         href: '/',
       },
     },
     {
-      title: 'Search Engine Optimization (SEO)',
+      title: 'Societal, Cultural, and Political Contexts',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconArrowsRightLeft,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Open to new ideas and contributions',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+        'Understand and address the propagation of misinformation within cultural and societal backdrops, ensuring protection for all communities.',
       icon: IconBulb,
+      link: {
+        label: 'Discover now',
+        href: '/',
+      },
+    },
+    {
+      title: 'Long-term Societal Impacts',
+      description: `Look beyond immediate reactions, pondering misinformation's long-term ramifications and influences on societal development and perspectives.`,
+      icon: IconRocket,
       link: {
         label: 'Discover now',
         href: '/',
@@ -834,10 +839,63 @@ export const teamData: TeamProps = {
   ],
 };
 
+export const solutionsData: SolutionsProps = {
+  header: {
+    title: 'Solutions',
+  },
+  solutions: [
+    {
+      title: 'Solution 1',
+      description: 'This is a placeholder for description. Please put some text in here.',
+      order: '1',
+      image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+    },
+    {
+      title: 'Solution 2',
+      description: 'This is a placeholder for description. Please put some text in here.',
+      order: '2',
+      image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+    },
+    {
+      title: 'Solution 3',
+      description: 'This is a placeholder for description. Please put some text in here.',
+      order: '3',
+      image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+    },
+    {
+      title: 'Solution 4',
+      description: 'This is a placeholder for description. Please put some text in here.',
+      order: '4',
+      image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+    },
+    {
+      title: 'Solution 5',
+      description: 'This is a placeholder for description. Please put some text in here.',
+      order: '5',
+      image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+    },
+  ],
+};
+
 // Testimonial data
 export const testimonialData: TestimonialProps = {
   header: {
-    title: 'What our customers say about us',
+    title: 'Solutions',
     subtitle:
       'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
     // highlight: 'Testimonial',
@@ -1400,13 +1458,13 @@ export const footerData2: FooterProps = {
   ],
   footNote: (
     <div className="mr-4 text-sm dark:text-slate-400">
-      <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
+      {/* <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
       Made by{' '}
       <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/">
         {' '}
         onWidget
       </a>{' '}
-      · All rights reserved.
+      · All rights reserved. */}
     </div>
   ),
 };

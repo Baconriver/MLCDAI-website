@@ -107,6 +107,13 @@ interface Testimonial {
   href?: string;
 }
 
+interface Solution {
+  title: string;
+  description: string;
+  order: string;
+  image: Image;
+}
+
 interface Link {
   label?: string;
   href?: string;
@@ -218,6 +225,11 @@ interface TestimonialProps {
   testimonials: Array<Testimonial>;
 }
 
+interface SolutionsProps {
+  header?: Header;
+  solutions: Array<Solution>;
+}
+
 interface PricingProps {
   header?: Header;
   prices: Array<Price>;
@@ -233,6 +245,10 @@ interface StatsProps {
 }
 
 interface SocialProofProps {
+  images: Array<Image>;
+}
+
+interface SponsorsProps {
   images: Array<Image>;
 }
 
