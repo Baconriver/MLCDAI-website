@@ -114,6 +114,12 @@ interface Solution {
   image: Image;
 }
 
+interface News {
+  title: string;
+  description: string;
+  image: Image;
+}
+
 interface Link {
   label?: string;
   href?: string;
@@ -166,6 +172,7 @@ interface HeroProps {
   callToAction?: CallToAction;
   callToAction2?: CallToAction;
   image?: Image;
+  image2?: Image;
 }
 
 interface FAQsProps {
@@ -228,6 +235,11 @@ interface TestimonialProps {
 interface SolutionsProps {
   header?: Header;
   solutions: Array<Solution>;
+}
+
+interface NewsProps {
+  header?: Header;
+  news: Array<News>;
 }
 
 interface PricingProps {

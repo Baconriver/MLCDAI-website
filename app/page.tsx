@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+'use client';
+// import type { Metadata } from 'next';
 
 import { SITE } from '~/config.js';
 
@@ -28,9 +29,9 @@ import News from '~/components/widgets/News';
 import Sponsors from '~/components/widgets/Sponsors';
 import Solutions from '~/components/widgets/Solutions';
 
-export const metadata: Metadata = {
-  title: SITE.title,
-};
+// export const metadata: Metadata = {
+//   title: SITE.title,
+// };
 
 export default function Page() {
   return (

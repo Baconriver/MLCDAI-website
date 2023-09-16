@@ -38,6 +38,7 @@ import {
   FooterProps,
   HeaderProps,
   HeroProps,
+  NewsProps,
   PricingProps,
   SocialProofProps,
   SolutionsProps,
@@ -157,6 +158,10 @@ export const heroData: HeroProps = {
   },
   image: {
     src: heroImg,
+    alt: 'Hero TailNext',
+  },
+  image2: {
+    src: hero2Img,
     alt: 'Hero TailNext',
   },
 };
@@ -893,6 +898,38 @@ export const solutionsData: SolutionsProps = {
       title: 'Solution 6',
       description: 'This is a placeholder for description. Please put some text in here.',
       order: '6',
+      image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+    },
+  ],
+};
+
+export const newsData: NewsProps = {
+  header: {
+    title: 'News',
+  },
+  news: [
+    {
+      title: 'News 1',
+      description: 'This is a placeholder for description. Please put some text in here.',
+      image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+    },
+    {
+      title: 'News 2',
+      description: 'This is a placeholder for description. Please put some text in here.',
+      image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: '',
+      },
+    },
+    {
+      title: 'News 2',
+      description: 'This is a placeholder for description. Please put some text in here.',
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: '',
