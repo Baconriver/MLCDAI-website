@@ -33,8 +33,8 @@ const Hero = (props: { data: HeroProps }) => {
             >
               <SwiperSlide>
                 <Image
-                  src={image.src}
-                  alt={image.alt}
+                  src={image!.src}
+                  alt={image!.alt}
                   className="mx-auto h-auto w-full bg-gray-400 dark:bg-slate-700"
                   placeholder="blur"
                   loading="eager"
@@ -44,8 +44,8 @@ const Hero = (props: { data: HeroProps }) => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src={image2.src}
-                  alt={image2.alt}
+                  src={image2!.src}
+                  alt={image2!.alt}
                   className="mx-auto h-auto w-full bg-gray-400 dark:bg-slate-700"
                   placeholder="blur"
                   loading="eager"
@@ -55,8 +55,8 @@ const Hero = (props: { data: HeroProps }) => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src={image.src}
-                  alt={image.alt}
+                  src={image!.src}
+                  alt={image!.alt}
                   className="mx-auto h-auto w-full bg-gray-400 dark:bg-slate-700"
                   placeholder="blur"
                   loading="eager"
@@ -66,8 +66,8 @@ const Hero = (props: { data: HeroProps }) => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src={image2.src}
-                  alt={image2.alt}
+                  src={image2!.src}
+                  alt={image2!.alt}
                   className="mx-auto h-auto w-full bg-gray-400 dark:bg-slate-700"
                   placeholder="blur"
                   loading="eager"

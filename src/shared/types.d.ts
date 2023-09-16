@@ -171,8 +171,8 @@ interface HeroProps {
   subtitle?: string | ReactElement;
   callToAction?: CallToAction;
   callToAction2?: CallToAction;
-  image: Image;
-  image2: Image;
+  image?: Image;
+  image2?: Image;
 }
 
 interface FAQsProps {
