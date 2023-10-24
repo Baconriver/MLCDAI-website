@@ -89,6 +89,7 @@ interface Item {
   icon?: Function;
   callToAction?: CallToAction;
   link?: Link;
+  image?: Image;
 }
 
 interface Team {

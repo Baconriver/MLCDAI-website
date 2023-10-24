@@ -59,7 +59,8 @@ import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import deakinLogo from '~/assets/images/sponsor-deakin.png';
-
+import avatar from '~/assets/images/avatar.jpg';
+import teamImage from '~/assets/images/team.jpg';
 // Announcement data
 export const announcementData: AnnouncementProps = {
   title: 'NEW',
@@ -172,7 +173,7 @@ export const hero2Data: HeroProps = {
   subtitle:
     'Vivamus venenatis, lectus a pellentesque placerat, felis tellus ultrices eros, et aliquam sapien nibh sed sem. Fusce ut ante eget purus viverra malesuada. Morbi eget mi maximus, ultricies urna eget, tristique lorem. Fusce cursus venenatis quam, a blandit lectus vulputate id. Praesent id interdum orci, vitae condimentum dui. Fusce pulvinar ante eget mattis semper. Suspendisse in diam massa.',
   callToAction: {
-    text: 'View jobs',
+    text: 'View Projects',
     href: 'https://www.linkedin.com/',
     targetBlank: true,
     btnType: 'primary',
@@ -182,7 +183,7 @@ export const hero2Data: HeroProps = {
     href: '/contact',
   },
   image: {
-    src: hero2Img,
+    src: teamImage,
     alt: 'Hero TailNext',
   },
 };
@@ -596,39 +597,68 @@ export const featuresData2: FeaturesProps = {
 // Feature data 3
 export const featuresData3: FeaturesProps = {
   header: {
-    title: 'Services',
+    title: 'Team',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
-      icon: IconBrandTailwind,
-    },
-    {
-      title: 'Ready-to-use Components',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      icon: IconComponents,
-    },
-    {
-      title: 'Best Practices',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
-      icon: IconListCheck,
-    },
-    {
-      title: 'Excellent Page Speed',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
-      icon: IconRocket,
-    },
-    {
-      title: 'Search Engine Optimization (SEO)',
+      title: 'Noah Williams',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconArrowsRightLeft,
+        "Noah is a charismatic chef renowned for his culinary skills. He's the owner of a popular restaurant in the city and enjoys experimenting with global cuisine",
+      // icon: IconBrandTailwind,
+      image: {
+        src: avatar,
+        alt: 'Hero TailNext',
+      },
     },
     {
-      title: 'Open to new ideas and contributions',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
-      icon: IconBulb,
+      title: 'Mia Johnson',
+      description:
+        "Mia is a talented artist known for her intricate and colorful paintings. She's a free spirit with a passion for travel and adventure.",
+      // icon: IconComponents,
+      image: {
+        src: avatar,
+        alt: 'Hero TailNext',
+      },
+    },
+    {
+      title: 'Lucas Bennett',
+      description:
+        "Lucas is a dedicated software engineer who loves to tinker with technology. He's an avid gamer and a connoisseur of sci-fi novels.",
+      // icon: IconListCheck,
+      image: {
+        src: avatar,
+        alt: 'Hero TailNext',
+      },
+    },
+    {
+      title: 'Emma Parker',
+      description:
+        "Emma is a passionate environmentalist who works tirelessly to protect and preserve natural habitats. She's also a vegetarian and an advocate for sustainable living.",
+      // icon: IconRocket,
+      image: {
+        src: avatar,
+        alt: 'Hero TailNext',
+      },
+    },
+    {
+      title: 'Liam Anderson',
+      description:
+        "Liam is a fitness enthusiast and personal trainer. He's committed to helping people lead healthier lives and is a competitive bodybuilder in his free time.",
+      // icon: IconArrowsRightLeft,
+      image: {
+        src: avatar,
+        alt: 'Hero TailNext',
+      },
+    },
+    {
+      title: 'Olivia Mitchell',
+      description:
+        'Olivia is a talented musician with a gift for playing the violin. She often performs at local charity events and enjoys hiking in her spare time.',
+      // icon: IconBulb,
+      image: {
+        src: avatar,
+        alt: 'Hero TailNext',
+      },
     },
   ],
 };
