@@ -82,40 +82,40 @@ export const headerData: HeaderProps = {
       label: 'About us',
       href: '/about',
     },
-    {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
-    {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-      ],
-    },
+    // {
+    //   label: 'Blog',
+    //   href: '/blog',
+    // },
+    // {
+    //   label: 'Contact',
+    //   href: '/contact',
+    // },
+    // {
+    //   label: 'Pages',
+    //   icon: IconChevronDown,
+    //   links: [
+    //     {
+    //       label: 'Pricing',
+    //       href: '/pricing',
+    //     },
+    //     {
+    //       label: 'Contact us',
+    //       href: '/contact',
+    //     },
+    //     {
+    //       label: 'FAQs',
+    //       href: '/faqs',
+    //     },
+    //     {
+    //       label: 'Privacy Policy',
+    //       href: '/privacy',
+    //     },
+    //     {
+    //       label: 'Terms & Conditions',
+    //       href: '/terms',
+    //     },
+    //   ],
+    // },
   ],
   actions: [
     // {
@@ -1362,7 +1362,7 @@ export const contact2Data: ContactProps = {
 
 // Footer data
 export const footerData: FooterProps = {
-  title: 'TailNext',
+  title: 'MLCDAI',
   links: [
     {
       label: 'Terms & Conditions',
@@ -1514,7 +1514,7 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
+      texts: ['Deakin University, Building LA, 70, Elgar Rd, Burwood VIC 3125'],
     },
     {
       title: 'Phone',
