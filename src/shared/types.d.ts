@@ -81,6 +81,12 @@ interface Image {
   alt: string;
 }
 
+interface memberContact {
+  title: string;
+  icon: Function;
+  href: string;
+}
+
 interface Item {
   title: string | boolean | number;
   description?: string | Array<string>;
@@ -90,6 +96,7 @@ interface Item {
   callToAction?: CallToAction;
   link?: Link;
   image?: Image;
+  memberContacts?: memberContact[];
 }
 
 interface Team {
@@ -195,6 +202,11 @@ interface CallToActionProps {
   subtitle: string;
   callToAction?: CallToAction;
   items?: Array<Item>;
+}
+
+interface TeamMembersProps {
+  header?: Header;
+  items: Array<Item>;
 }
 
 interface FeaturesProps {

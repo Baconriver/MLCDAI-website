@@ -8,6 +8,7 @@ import {
   IconBrandLinkedin,
   IconBrandTailwind,
   IconBrandTwitter,
+  IconBrandYoutube,
   IconBulb,
   IconCheck,
   IconChevronDown,
@@ -34,7 +35,7 @@ import {
   ContactProps,
   ContentProps,
   FAQsProps,
-  FeaturesProps,
+  TeamMembersProps,
   FooterProps,
   HeaderProps,
   HeroProps,
@@ -47,6 +48,7 @@ import {
   StepsProps,
   TeamProps,
   TestimonialProps,
+  FeaturesProps,
 } from './types';
 
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
@@ -60,6 +62,22 @@ import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import deakinLogo from '~/assets/images/sponsor-deakin.png';
 import avatar from '~/assets/images/avatar.jpg';
+import XiaoLiu from '~/assets/avatars/1.XiaoLiu.jpeg';
+import HilyaArini from '~/assets/avatars/2.HilyaArini.jpeg';
+import MingLiu from '~/assets/avatars/3.MingLiu.jpeg';
+import FitriT from '~/assets/avatars/4.FitriTrapsilawati.jpg';
+import ChathuR from '~/assets/avatars/5.ChathuRanaweera.jpeg';
+import KevinLee from '~/assets/avatars/6.KevinLee.jpeg';
+import HassanVally from '~/assets/avatars/7.HassanVally.jpeg';
+import AnnaKlas from '~/assets/avatars/8.AnnaKlas.jpeg';
+import AdamCardilini from '~/assets/avatars/9.AdamCardilini.jpeg';
+import YunMulyani from '~/assets/avatars/10.YunMulyani.jpeg';
+import YunitaSari from '~/assets/avatars/11.YunitaSari.jpg';
+import ArifNurwidyantoro from '~/assets/avatars/12.ArifNurwidyantoro.jpeg';
+import CatherineBennett from '~/assets/avatars/13.CatherineBennett.webp';
+import JustinLawson from '~/assets/avatars/14.JustinLawson.jpeg';
+import GabiMocatta from '~/assets/avatars/15.GabiMocatta.png';
+import OscarYutaoWu from '~/assets/avatars/16.OscarYutaoWu.jpeg';
 import teamImage from '~/assets/images/team.jpg';
 // Announcement data
 export const announcementData: AnnouncementProps = {
@@ -594,71 +612,423 @@ export const featuresData2: FeaturesProps = {
   ],
 };
 
-// Feature data 3
-export const featuresData3: FeaturesProps = {
+// Team members
+export const teamMemebersData: FeaturesProps = {
   header: {
     title: 'Team',
   },
   items: [
     {
-      title: 'Noah Williams',
+      title: 'A/Prof. Xiao Liu',
       description:
-        "Noah is a charismatic chef renowned for his culinary skills. He's the owner of a popular restaurant in the city and enjoys experimenting with global cuisine",
-      // icon: IconBrandTailwind,
+        "Lead of the project and MCR-A/Prof at Deakin's School of IT, specializes in online misinformation detection and human-centric software engineering.",
       image: {
-        src: avatar,
-        alt: 'Hero TailNext',
+        src: XiaoLiu,
+        alt: 'A/Prof. Xiao Liu',
       },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
     },
     {
-      title: 'Mia Johnson',
-      description:
-        "Mia is a talented artist known for her intricate and colorful paintings. She's a free spirit with a passion for travel and adventure.",
-      // icon: IconComponents,
+      title: 'Dr. Hilya Arini',
+      description: 'Co-Lead and ECR-Lecturer at UGM, specializes in risk communication and behavioural operations.',
       image: {
-        src: avatar,
-        alt: 'Hero TailNext',
+        src: HilyaArini,
+        alt: 'Dr. Hilya Arini',
       },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
     },
     {
-      title: 'Lucas Bennett',
+      title: 'Dr Ming Liu',
       description:
-        "Lucas is a dedicated software engineer who loves to tinker with technology. He's an avid gamer and a connoisseur of sci-fi novels.",
-      // icon: IconListCheck,
+        "ECR-Lecturer at Deakin's School of IT, brings expertise in Natural Language Processing to the project.",
       image: {
-        src: avatar,
-        alt: 'Hero TailNext',
+        src: MingLiu,
+        alt: 'Dr Ming Liu',
       },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
     },
     {
-      title: 'Emma Parker',
-      description:
-        "Emma is a passionate environmentalist who works tirelessly to protect and preserve natural habitats. She's also a vegetarian and an advocate for sustainable living.",
-      // icon: IconRocket,
+      title: 'Asst. Prof. Fitri Trapsilawati',
+      description: 'ECR-Lecturer at UGM, brings expertise in cognitive ergonomics',
       image: {
-        src: avatar,
-        alt: 'Hero TailNext',
+        src: FitriT,
+        alt: 'Asst. Prof. Fitri Trapsilawati',
       },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
     },
     {
-      title: 'Liam Anderson',
+      title: 'Dr Chathu Ranaweera',
       description:
-        "Liam is a fitness enthusiast and personal trainer. He's committed to helping people lead healthier lives and is a competitive bodybuilder in his free time.",
-      // icon: IconArrowsRightLeft,
+        "MCR-Senior Lecturer at Deakin's School of IT, focuses on next-generation communication technologies and smart energy.",
       image: {
-        src: avatar,
-        alt: 'Hero TailNext',
+        src: ChathuR,
+        alt: 'Dr Chathu Ranaweera',
       },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
     },
     {
-      title: 'Olivia Mitchell',
+      title: 'A/Prof. Kevin Lee',
       description:
-        'Olivia is a talented musician with a gift for playing the violin. She often performs at local charity events and enjoys hiking in her spare time.',
-      // icon: IconBulb,
+        "MCR-A/Prof at Deakin's School of IT, specializes in smart technologies for sustainable Information Technolog.",
       image: {
-        src: avatar,
-        alt: 'Hero TailNext',
+        src: KevinLee,
+        alt: 'A/Prof. Kevin Lee',
       },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'A/Prof. Hassan Vally',
+      description:
+        "MCR-A/Prof at Deakin's School of Health and Social Development, specializes in epidemiology, science communication, and misinformation.",
+      image: {
+        src: HassanVally,
+        alt: 'A/Prof. Hassan Vally',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'Dr Anna Klas',
+      description:
+        "ECR-Lecturer at Deakin's School of Psychology, excels in the psychology of climate (in)action, sustainability, and mixed methods research.",
+      image: {
+        src: AnnaKlas,
+        alt: 'Dr Anna Klas',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'Dr Adam Cardilini',
+      description:
+        "ECR-Lecturer at Deakin's School of Life and Environmental Sciences, specializes in environmental social science, climate, animal agriculture, and mixed methods.",
+      image: {
+        src: AdamCardilini,
+        alt: 'Dr Adam Cardilini',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'Yun Mulyani',
+      description:
+        'ECR-Lecturer at UGM, focuses on decision and cognitive science, machine learning, and data analytics.',
+      image: {
+        src: YunMulyani,
+        alt: 'Yun Mulyani',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'Dr Yunita Sari',
+      description: 'ECR and Lecturer at UGM, specializes in Machine Learning, NLP, and Text Mining.',
+      image: {
+        src: YunitaSari,
+        alt: 'Dr Yunita Sari',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'Asst. Prof. Arif Nurwidyantoro',
+      description:
+        'ECR-Lecturer at UGM, specializes in software engineering, contributing to the development of our interactive, user-friendly website.',
+      image: {
+        src: ArifNurwidyantoro,
+        alt: 'Asst. Prof. Arif Nurwidyantoro',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'Prof Catherine Bennett',
+      description:
+        "Professor at Deakin's School of Health and Social Development, brings expertise in public health and epidemiology, Farmer health (National Centre for Farmer Health board member).",
+      image: {
+        src: CatherineBennett,
+        alt: 'Prof Catherine Bennett',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'Dr Justin Lawson',
+      description:
+        "ECR-Lecturer at Deakin's School of Health and Social Development, specializes in eco-health, greening urban spaces, and biodiversity conservation.",
+      image: {
+        src: JustinLawson,
+        alt: 'Dr Justin Lawson',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'Dr Gabi Mocatta',
+      description:
+        "Lecturer in Communication - Journalism at Deakin's School of Communication and Creative Arts, focuses on media, environment, and climate change.",
+      image: {
+        src: GabiMocatta,
+        alt: 'Dr Gabi Mocatta',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      title: 'Oscar (Yutao) Wu',
+      description: "PhD Student at Deakin's School of Info Technology, focuses on NLP, machine learning and LLM",
+      image: {
+        src: OscarYutaoWu,
+        alt: 'Oscar (Yutao) Wu',
+      },
+      memberContacts: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
     },
   ],
 };
@@ -1361,143 +1731,144 @@ export const contact2Data: ContactProps = {
 };
 
 // Footer data
-export const footerData: FooterProps = {
-  title: 'MLCDAI',
-  links: [
-    {
-      label: 'Terms & Conditions',
-      href: '/terms',
-    },
-    {
-      label: 'Privacy Policy',
-      href: '/privacy',
-    },
-  ],
-  columns: [
-    {
-      title: 'Product',
-      links: [
-        {
-          label: 'Features',
-          href: '/',
-        },
-        {
-          label: 'Security',
-          href: '/',
-        },
-        {
-          label: 'Team',
-          href: '/',
-        },
-        {
-          label: 'Enterprise',
-          href: '/',
-        },
-        {
-          label: 'Customer stories',
-          href: '/',
-        },
-        {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'Resources',
-          href: '/',
-        },
-      ],
-    },
-    {
-      title: 'Platform',
-      links: [
-        {
-          label: 'Developer API',
-          href: '/',
-        },
-        {
-          label: 'Partners',
-          href: '/',
-        },
-      ],
-    },
-    {
-      title: 'Support',
-      links: [
-        {
-          label: 'Docs',
-          href: '/',
-        },
-        {
-          label: 'Community Forum',
-          href: '/',
-        },
-        {
-          label: 'Professional Services',
-          href: '/',
-        },
-        {
-          label: 'Skills',
-          href: '/',
-        },
-        {
-          label: 'Status',
-          href: '/',
-        },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        {
-          label: 'About',
-          href: '/',
-        },
-        {
-          label: 'Blog',
-          href: '/blog',
-        },
-        {
-          label: 'Careers',
-          href: '/',
-        },
-        {
-          label: 'Press',
-          href: '/',
-        },
-        {
-          label: 'Inclusion',
-          href: '/',
-        },
-        {
-          label: 'Social Impact',
-          href: '/',
-        },
-        {
-          label: 'Shop',
-          href: '/',
-        },
-      ],
-    },
-  ],
-  socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
-    { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
-  ],
-  footNote: (
-    <div className="mr-4 text-sm dark:text-slate-400">
-      <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
-      Made by{' '}
-      <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/">
-        {' '}
-        onWidget
-      </a>{' '}
-      · All rights reserved.
-    </div>
-  ),
-};
+// export const footerData: FooterProps = {
+//   title: 'MLCDAI',
+//   links: [
+//     {
+//       label: 'Terms & Conditions',
+//       href: '/terms',
+//     },
+//     {
+//       label: 'Privacy Policy',
+//       href: '/privacy',
+//     },
+//   ],
+//   columns: [
+//     {
+//       title: 'Product',
+//       links: [
+//         {
+//           label: 'Features',
+//           href: '/',
+//         },
+//         {
+//           label: 'Security',
+//           href: '/',
+//         },
+//         {
+//           label: 'Team',
+//           href: '/',
+//         },
+//         {
+//           label: 'Enterprise',
+//           href: '/',
+//         },
+//         {
+//           label: 'Customer stories',
+//           href: '/',
+//         },
+//         {
+//           label: 'Pricing',
+//           href: '/pricing',
+//         },
+//         {
+//           label: 'Resources',
+//           href: '/',
+//         },
+//       ],
+//     },
+//     {
+//       title: 'Platform',
+//       links: [
+//         {
+//           label: 'Developer API',
+//           href: '/',
+//         },
+//         {
+//           label: 'Partners',
+//           href: '/',
+//         },
+//       ],
+//     },
+//     {
+//       title: 'Support',
+//       links: [
+//         {
+//           label: 'Docs',
+//           href: '/',
+//         },
+//         {
+//           label: 'Community Forum',
+//           href: '/',
+//         },
+//         {
+//           label: 'Professional Services',
+//           href: '/',
+//         },
+//         {
+//           label: 'Skills',
+//           href: '/',
+//         },
+//         {
+//           label: 'Status',
+//           href: '/',
+//         },
+//       ],
+//     },
+//     {
+//       title: 'Company',
+//       links: [
+//         {
+//           label: 'About',
+//           href: '/',
+//         },
+//         {
+//           label: 'Blog',
+//           href: '/blog',
+//         },
+//         {
+//           label: 'Careers',
+//           href: '/',
+//         },
+//         {
+//           label: 'Press',
+//           href: '/',
+//         },
+//         {
+//           label: 'Inclusion',
+//           href: '/',
+//         },
+//         {
+//           label: 'Social Impact',
+//           href: '/',
+//         },
+//         {
+//           label: 'Shop',
+//           href: '/',
+//         },
+//       ],
+//     },
+//   ],
+//   socials: [
+//     { label: 'Twitter', icon: IconBrandTwitter, href: 'https://twitter.com/counterinfodem1' },
+//     { label: 'Youtube', icon: IconBrandYoutube, href:'https://www.youtube.com/channel/UCsf_Bd1QvG0oL46-J3QIojQ'},
+//     // { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
+//     // { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
+//     // { label: 'RSS', icon: IconRss, href: '#' },
+//     // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
+//   ],
+//   footNote: (
+//     <div className="mr-4 text-sm dark:text-slate-400">
+//       <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
+//       Made by{' '}
+//       <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/">
+//         {' '}
+//         onWidget
+//       </a>{' '}
+//       · All rights reserved.
+//     </div>
+//   ),
+// };
 
 // Footer2 data
 export const footerData2: FooterProps = {
@@ -1526,11 +1897,12 @@ export const footerData2: FooterProps = {
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
-    { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
+    { label: 'Twitter', icon: IconBrandTwitter, href: 'https://twitter.com/counterinfodem1' },
+    { label: 'Youtube', icon: IconBrandYoutube, href: 'https://www.youtube.com/channel/UCsf_Bd1QvG0oL46-J3QIojQ' },
+    // { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
+    // { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
+    // { label: 'RSS', icon: IconRss, href: '#' },
+    // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
   ],
   footNote: (
     <div className="mr-4 text-sm dark:text-slate-400">
